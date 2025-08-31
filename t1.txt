@@ -1,0 +1,44 @@
+1))
+
+create table department
+(
+	dept_no number(10) primary key,
+	dept_name varchar(20) unique,
+	location varchar(10)
+);
+
+2))
+
+desc department;
+
+3))
+
+insert into department values('&dept_no','&dept_name','&location');
+
+4))
+
+Select * from department;
+
+5))
+
+select * from department where location='NY';
+
+6))
+
+select * from department where dept_no=10;
+
+7))
+
+select * from deparment where dept_name like 'A%';
+
+8))
+
+select dept_name from department where dept_no<100;
+
+9))
+
+delete from department where dept_name='TRG';
+
+10))
+
+update department set dept_name='IT' where dept_name='EDP';
