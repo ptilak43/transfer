@@ -1,0 +1,223 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Headers */
+
+h1, h2, h3, h4, h5, h6 {
+  color: #3498db; /* Blue */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+/* Paragraphs */
+
+p {
+  margin-bottom: 20px;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+  color: #2980b9; /* Blue */
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #1a1d23; /* Dark Gray */
+}
+
+a:active {
+  color: #3498db; /* Blue */
+}
+
+/* Buttons */
+
+button {
+  background-color: #3498db; /* Blue */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #2980b9; /* Darker Blue */
+}
+
+button:active {
+  background-color: #1a1d23; /* Dark Gray */
+}
+
+/* Forms */
+
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+  border-color: #3498db; /* Blue */
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  transition: border-color 0.2s ease;
+}
+
+textarea:focus {
+  border-color: #3498db; /* Blue */
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+/* Tables */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #3498db; /* Blue */
+  color: #fff;
+}
+
+/* Navigation */
+
+nav {
+  background-color: #3498db; /* Blue */
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin-right: 20px;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+/* Footer */
+
+footer {
+  background-color: #3498db; /* Blue */
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  /* Add responsive styles here */
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+}
+
+/* Utility Classes */
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Alert Messages */
+
+.alert {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #8bc34a;
+  color: #3e8e41;
+}
+
+.alert-error {
+  background-color:
