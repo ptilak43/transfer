@@ -3,33 +3,290 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Blue & White Theme</title>
-    <link rel="stylesheet" href="style2.css">
+    <title>HTML Elements Showcase</title>
+<link rel="stylesheet" href="style2.css">
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+        h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; }
+        section { margin-bottom: 40px; }
+        .example-block { border: 1px solid #eee; padding: 15px; margin-top: 10px; }
+        /* Style for form elements */
+        form { display: flex; flex-direction: column; gap: 10px; max-width: 500px; }
+        label { font-weight: bold; }
+        input, textarea, select { padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 10px 15px; background-color: #007BFF; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
 </head>
 <body>
+
     <header>
-        <h1>Responsive Design with Blue & White</h1>
+        <h1>HTML Elements Showcase</h1>
+        <p>A comprehensive demonstration of various HTML elements.</p>
+        <nav>
+            <ul>
+                <li><a href="#text-content">Text & Content</a></li>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#links-images">Links & Images</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#semantic">Semantic Elements</a></li>
+                <li><a href="#media">Media</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <div class="content-section">
-            <div class="card">
-                <h2>Card 1</h2>
-                <p>This is the first card. The layout will adapt to different screen sizes, demonstrating a responsive design approach.</p>
+
+        <section id="text-content">
+            <h2>Text Content & Formatting</h2>
+
+            <h3>Headings</h3>
+            <div class="example-block">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
             </div>
-            <div class="card">
-                <h2>Card 2</h2>
-                <p>This is the second card. Notice how the spacing and alignment change on a tablet, and how they become a single row on a desktop.</p>
+
+            <h3>Paragraph</h3>
+            <div class="example-block">
+                <p>This is a paragraph element. It's used to group together a block of text.</p>
             </div>
-            <div class="card">
-                <h2>Card 3</h2>
-                <p>This is the third card. The "mobile-first" approach means we're building the foundation for small screens first, then adding more complex styles for larger screens.</p>
+
+            <h3>Text Formatting</h3>
+            <div class="example-block">
+                <p>
+                    This text is <b>bold</b> using the b tag.<br>
+                    This text is <strong>important</strong> using the strong tag.<br>
+                    This text is <i>italic</i> using the i tag.<br>
+                    This text is <em>emphasized</em> using the em tag.<br>
+                    This text is <mark>highlighted</mark> using the mark tag.<br>
+                    This text is <small>small</small> using the small tag.<br>
+                    This is <sub>subscript</sub> and this is <sup>superscript</sup>.<br>
+                    This text is <del>deleted</del> and this text is <ins>inserted</ins>.<br>
+                    This text is <u>underlined</u> using the u tag.<br>
+                </p>
             </div>
-        </div>
+
+            <h3>Blockquote & Preformatted Text</h3>
+            <div class="example-block">
+                <blockquote>
+                    <p>This is a blockquote, used for quoting content from another source.</p>
+                    <cite>- Some Author</cite>
+                </blockquote>
+                <pre>
+                    This is preformatted text.
+                    It preserves both spaces and line breaks.
+                    Useful for displaying code snippets.
+                </pre>
+            </div>
+
+            <h3>Code & Output</h3>
+            <div class="example-block">
+                <p>Inline code: <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></p>
+                <p>Keyboard input: Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.</p>
+                <p>Sample output: <samp>File not found.</samp></p>
+                <p>Variable: <var>x</var> = 5</p>
+            </div>
+        </section>
+
+        <section id="lists">
+            <h2>Lists</h2>
+            
+            <h3>Unordered List (`ul`)</h3>
+            <div class="example-block">
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </div>
+
+            <h3>Ordered List (`ol`)</h3>
+            <div class="example-block">
+                <ol>
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                </ol>
+            </div>
+
+            <h3>Description List (`dl`)</h3>
+            <div class="example-block">
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>HyperText Markup Language, the standard markup language for documents designed to be displayed in a web browser.</dd>
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets, a style sheet language used for describing the presentation of a document written in a markup language.</dd>
+                </dl>
+            </div>
+        </section>
+
+        <section id="links-images">
+            <h2>Links & Images</h2>
+            
+            <h3>Link (`a`)</h3>
+            <div class="example-block">
+                <a href="https://www.google.com" target="_blank">Visit Google</a>
+                <p>This link opens in a new tab due to the `target="_blank"` attribute.</p>
+            </div>
+
+            <h3>Image (`img`)</h3>
+            <div class="example-block">
+                <p>The image below shows how to embed an image. The `alt` attribute is crucial for accessibility.</p>
+                <img src="https://via.placeholder.com/150" alt="A placeholder image" width="150" height="150">
+            </div>
+        </section>
+
+        <section id="tables">
+            <h2>Tables</h2>
+            
+            <h3>Table (`table`)</h3>
+            <div class="example-block">
+                <table>
+                    <caption>Example Table</caption>
+                    <thead>
+                        <tr>
+                            <th>Header 1</th>
+                            <th>Header 2</th>
+                            <th>Header 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Row 1, Cell 1</td>
+                            <td>Row 1, Cell 2</td>
+                            <td>Row 1, Cell 3</td>
+                        </tr>
+                        <tr>
+                            <td>Row 2, Cell 1</td>
+                            <td>Row 2, Cell 2</td>
+                            <td>Row 2, Cell 3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Footer 1</td>
+                            <td>Footer 2</td>
+                            <td>Footer 3</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <section id="forms">
+            <h2>Forms</h2>
+            
+            <h3>Form (`form`)</h3>
+            <div class="example-block">
+                <form action="/submit-form" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" placeholder="Enter your name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="user_email" placeholder="Enter your email">
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="user_password">
+
+                    <p>Favorite Language:</p>
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">HTML</label><br>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">CSS</label><br>
+
+                    <p>Interests:</p>
+                    <input type="checkbox" id="coding" name="interests" value="coding">
+                    <label for="coding">Coding</label><br>
+                    <input type="checkbox" id="reading" name="interests" value="reading">
+                    <label for="reading">Reading</label><br>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="user_message" rows="4"></textarea>
+
+                    <label for="country">Country:</label>
+                    <select id="country" name="user_country">
+                        <option value="us">United States</option>
+                        <option value="ca">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                    </select>
+
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="semantic">
+            <h2>Semantic HTML</h2>
+            
+            <h3>Article (`article`)</h3>
+            <div class="example-block">
+                <article>
+                    <h3>First Article</h3>
+                    <p>An article is a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable.</p>
+                </article>
+            </div>
+
+            <h3>Aside (`aside`)</h3>
+            <div class="example-block">
+                <p>Main content here.</p>
+                <aside>
+                    <h4>Related Links</h4>
+                    <p>Content in an `aside` tag is related to the surrounding content but is not essential to the main flow of the text.</p>
+                </aside>
+            </div>
+
+            <h3>Figure (`figure`) & Figcaption (`figcaption`)</h3>
+            <div class="example-block">
+                <figure>
+                    <img src="https://via.placeholder.com/200" alt="Placeholder image for a figure." width="200" height="200">
+                    <figcaption>This is a figure with a caption.</figcaption>
+                </figure>
+            </div>
+
+            <h3>Other Semantic Tags</h3>
+            <div class="example-block">
+                <p>This is a section of content.</p>
+                <section>
+                    <p>This is a `<section>` tag. It groups a related block of content.</p>
+                </section>
+                <footer>
+                    <p>This is a `<footer>` tag. It typically contains author info, copyright data, or links to related documents.</p>
+                </footer>
+            </div>
+        </section>
+
+        <section id="media">
+            <h2>Media Elements</h2>
+            
+            <h3>Audio (`audio`)</h3>
+            <div class="example-block">
+                <p>This element embeds a sound file. The controls attribute provides playback controls.</p>
+                <audio controls>
+                    <source src="audio/example.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <h3>Video (`video`)</h3>
+            <div class="example-block">
+                <p>This element embeds a video. The controls attribute provides playback controls.</p>
+                <video width="320" height="240" controls>
+                    <source src="video/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2024 Responsive Theme. All Rights Reserved.</p>
+        <p>&copy; 2023 Coding Partner. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
